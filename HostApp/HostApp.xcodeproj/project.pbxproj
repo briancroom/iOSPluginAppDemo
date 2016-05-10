@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		AEC353E01CE1B5A6000E643C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC353DF1CE1B5A6000E643C /* main.m */; };
 		AEC353E31CE1B5A6000E643C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC353E21CE1B5A6000E643C /* AppDelegate.m */; };
-		AEC354301CE1B9F1000E643C /* Plugin1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC3542E1CE1B9F1000E643C /* Plugin1.framework */; };
-		AEC354311CE1B9F1000E643C /* Plugin2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC3542F1CE1B9F1000E643C /* Plugin2.framework */; };
-		AEC354351CE1BA20000E643C /* Plugin1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEC3542E1CE1B9F1000E643C /* Plugin1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AEC354361CE1BA20000E643C /* Plugin2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEC3542F1CE1B9F1000E643C /* Plugin2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEC354391CE1BB9A000E643C /* PluginLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC354381CE1BB9A000E643C /* PluginLoader.m */; };
 		AEC354491CE1CA67000E643C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEC354481CE1CA67000E643C /* Default-568h@2x.png */; };
+		AEC3546D1CE24BFD000E643C /* Plugin1.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEC3546C1CE24BFD000E643C /* Plugin1.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AEC354771CE25192000E643C /* Plugin2.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEC354751CE24E45000E643C /* Plugin2.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AEC354901CE295E3000E643C /* Plugin3.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEC3548F1CE295E3000E643C /* Plugin3.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,10 +21,11 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstSubfolderSpec = 13;
 			files = (
-				AEC354351CE1BA20000E643C /* Plugin1.framework in CopyFiles */,
-				AEC354361CE1BA20000E643C /* Plugin2.framework in CopyFiles */,
+				AEC354771CE25192000E643C /* Plugin2.bundle in CopyFiles */,
+				AEC3546D1CE24BFD000E643C /* Plugin1.bundle in CopyFiles */,
+				AEC354901CE295E3000E643C /* Plugin3.bundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,12 +37,13 @@
 		AEC353E11CE1B5A6000E643C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEC353E21CE1B5A6000E643C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AEC353F21CE1B5A6000E643C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEC3542E1CE1B9F1000E643C /* Plugin1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Plugin1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEC3542F1CE1B9F1000E643C /* Plugin2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Plugin2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC354371CE1BB9A000E643C /* PluginLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginLoader.h; sourceTree = "<group>"; };
 		AEC354381CE1BB9A000E643C /* PluginLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginLoader.m; sourceTree = "<group>"; };
 		AEC354411CE1C644000E643C /* AppPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppPlugin.h; sourceTree = "<group>"; };
 		AEC354481CE1CA67000E643C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AEC3546C1CE24BFD000E643C /* Plugin1.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = Plugin1.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC354751CE24E45000E643C /* Plugin2.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = Plugin2.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC3548F1CE295E3000E643C /* Plugin3.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; name = Plugin3.bundle; path = "Plugin3.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,8 +51,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEC354301CE1B9F1000E643C /* Plugin1.framework in Frameworks */,
-				AEC354311CE1B9F1000E643C /* Plugin2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +62,7 @@
 			children = (
 				AEC353DD1CE1B5A6000E643C /* HostApp */,
 				AEC3543E1CE1C51F000E643C /* CommonPluginHeaders */,
-				AEC354331CE1BA0B000E643C /* Plugins */,
+				AEC354721CE24C72000E643C /* PlugIns */,
 				AEC353DC1CE1B5A6000E643C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,15 +97,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AEC354331CE1BA0B000E643C /* Plugins */ = {
-			isa = PBXGroup;
-			children = (
-				AEC3542E1CE1B9F1000E643C /* Plugin1.framework */,
-				AEC3542F1CE1B9F1000E643C /* Plugin2.framework */,
-			);
-			name = Plugins;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		AEC3543E1CE1C51F000E643C /* CommonPluginHeaders */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +104,16 @@
 			);
 			name = CommonPluginHeaders;
 			path = ../CommonPluginHeaders;
+			sourceTree = "<group>";
+		};
+		AEC354721CE24C72000E643C /* PlugIns */ = {
+			isa = PBXGroup;
+			children = (
+				AEC3546C1CE24BFD000E643C /* Plugin1.bundle */,
+				AEC354751CE24E45000E643C /* Plugin2.bundle */,
+				AEC3548F1CE295E3000E643C /* Plugin3.bundle */,
+			);
+			name = PlugIns;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

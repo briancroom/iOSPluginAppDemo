@@ -7,16 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AEC354061CE1B7FA000E643C /* Plugin1.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC354051CE1B7FA000E643C /* Plugin1.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AEC3540F1CE1B84E000E643C /* Plugin1ViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC3540D1CE1B84E000E643C /* Plugin1ViewController.h */; };
-		AEC354101CE1B84E000E643C /* Plugin1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC3540E1CE1B84E000E643C /* Plugin1ViewController.m */; };
-		AEC354121CE1B8A7000E643C /* Plugin1.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC354111CE1B8A7000E643C /* Plugin1.m */; };
-		AEC3543B1CE1C333000E643C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC3543A1CE1C333000E643C /* Assets.xcassets */; };
-		AEC354431CE1C675000E643C /* AppPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC354421CE1C675000E643C /* AppPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEC354581CE24A40000E643C /* Plugin1.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC354111CE1B8A7000E643C /* Plugin1.m */; };
+		AEC354591CE24A40000E643C /* Plugin1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC3540E1CE1B84E000E643C /* Plugin1ViewController.m */; };
+		AEC3545A1CE24A43000E643C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC3543A1CE1C333000E643C /* Assets.xcassets */; };
+		AEC3545C1CE24A4B000E643C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEC354071CE1B7FA000E643C /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AEC354021CE1B7FA000E643C /* Plugin1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Plugin1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC354051CE1B7FA000E643C /* Plugin1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plugin1.h; sourceTree = "<group>"; };
 		AEC354071CE1B7FA000E643C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEC3540D1CE1B84E000E643C /* Plugin1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plugin1ViewController.h; sourceTree = "<group>"; };
@@ -24,10 +21,12 @@
 		AEC354111CE1B8A7000E643C /* Plugin1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plugin1.m; sourceTree = "<group>"; };
 		AEC3543A1CE1C333000E643C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEC354421CE1C675000E643C /* AppPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPlugin.h; sourceTree = "<group>"; };
+		AEC354521CE24A34000E643C /* Plugin1.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Plugin1.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC354541CE24A34000E643C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AEC353FE1CE1B7FA000E643C /* Frameworks */ = {
+		AEC3544F1CE24A34000E643C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +41,7 @@
 			children = (
 				AEC354041CE1B7FA000E643C /* Plugin1 */,
 				AEC3543F1CE1C52E000E643C /* CommonPluginHeaders */,
+				AEC354531CE24A34000E643C /* Plugin1 */,
 				AEC354031CE1B7FA000E643C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,7 +49,7 @@
 		AEC354031CE1B7FA000E643C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AEC354021CE1B7FA000E643C /* Plugin1.framework */,
+				AEC354521CE24A34000E643C /* Plugin1.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,30 +76,24 @@
 			path = ../CommonPluginHeaders;
 			sourceTree = "<group>";
 		};
+		AEC354531CE24A34000E643C /* Plugin1 */ = {
+			isa = PBXGroup;
+			children = (
+				AEC354541CE24A34000E643C /* Info.plist */,
+			);
+			path = Plugin1;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		AEC353FF1CE1B7FA000E643C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AEC354431CE1C675000E643C /* AppPlugin.h in Headers */,
-				AEC3540F1CE1B84E000E643C /* Plugin1ViewController.h in Headers */,
-				AEC354061CE1B7FA000E643C /* Plugin1.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		AEC354011CE1B7FA000E643C /* Plugin1 */ = {
+		AEC354511CE24A34000E643C /* Plugin1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AEC3540A1CE1B7FA000E643C /* Build configuration list for PBXNativeTarget "Plugin1" */;
+			buildConfigurationList = AEC354551CE24A34000E643C /* Build configuration list for PBXNativeTarget "Plugin1" */;
 			buildPhases = (
-				AEC353FD1CE1B7FA000E643C /* Sources */,
-				AEC353FE1CE1B7FA000E643C /* Frameworks */,
-				AEC353FF1CE1B7FA000E643C /* Headers */,
-				AEC354001CE1B7FA000E643C /* Resources */,
+				AEC3544E1CE24A34000E643C /* Sources */,
+				AEC3544F1CE24A34000E643C /* Frameworks */,
+				AEC354501CE24A34000E643C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -107,8 +101,8 @@
 			);
 			name = Plugin1;
 			productName = Plugin1;
-			productReference = AEC354021CE1B7FA000E643C /* Plugin1.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = AEC354521CE24A34000E643C /* Plugin1.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -118,7 +112,7 @@
 			attributes = {
 				LastUpgradeCheck = 0730;
 				TargetAttributes = {
-					AEC354011CE1B7FA000E643C = {
+					AEC354511CE24A34000E643C = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -135,29 +129,30 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AEC354011CE1B7FA000E643C /* Plugin1 */,
+				AEC354511CE24A34000E643C /* Plugin1 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AEC354001CE1B7FA000E643C /* Resources */ = {
+		AEC354501CE24A34000E643C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEC3543B1CE1C333000E643C /* Assets.xcassets in Resources */,
+				AEC3545C1CE24A4B000E643C /* Info.plist in Resources */,
+				AEC3545A1CE24A43000E643C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AEC353FD1CE1B7FA000E643C /* Sources */ = {
+		AEC3544E1CE24A34000E643C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEC354121CE1B8A7000E643C /* Plugin1.m in Sources */,
-				AEC354101CE1B84E000E643C /* Plugin1ViewController.m in Sources */,
+				AEC354581CE24A40000E643C /* Plugin1.m in Sources */,
+				AEC354591CE24A40000E643C /* Plugin1ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,35 +249,27 @@
 			};
 			name = Release;
 		};
-		AEC3540B1CE1B7FA000E643C /* Debug */ = {
+		AEC354561CE24A34000E643C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Plugin1/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.briancroom.Plugin1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
-		AEC3540C1CE1B7FA000E643C /* Release */ = {
+		AEC354571CE24A34000E643C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Plugin1/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.briancroom.Plugin1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -298,14 +285,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AEC3540A1CE1B7FA000E643C /* Build configuration list for PBXNativeTarget "Plugin1" */ = {
+		AEC354551CE24A34000E643C /* Build configuration list for PBXNativeTarget "Plugin1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AEC3540B1CE1B7FA000E643C /* Debug */,
-				AEC3540C1CE1B7FA000E643C /* Release */,
+				AEC354561CE24A34000E643C /* Debug */,
+				AEC354571CE24A34000E643C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

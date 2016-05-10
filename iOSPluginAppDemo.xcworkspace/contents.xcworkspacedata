@@ -10,4 +10,7 @@
    <FileRef
       location = "group:Plugin2/Plugin2.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Plugin3/Plugin3.xcodeproj">
+   </FileRef>
 </Workspace>

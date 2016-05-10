@@ -1,8 +1,10 @@
 #import <UIKit/UIKit.h>
 
-FOUNDATION_EXPORT double Plugin1VersionNumber;
-FOUNDATION_EXPORT const unsigned char Plugin1VersionString[];
+// Import the shared header which defines the common interface that plugins
+// must adopt.
+#import "AppPlugin.h"
 
-#import <Plugin1/AppPlugin.h>
-
-@interface Plugin1: NSObject <AppPlugin> @end
+/// Note that `Plugin1` is set in the `Info.plist` to be the principal class
+/// of this plugin bundle.
+@interface Plugin1: NSObject <AppPlugin>
+@end

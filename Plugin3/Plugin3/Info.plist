@@ -21,7 +21,7 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>NSPrincipalClass</key>
-	<string>Plugin1</string>
+	<string>Plugin3</string>
 	<key>PluginEnabled</key>
 	<true/>
 </dict>

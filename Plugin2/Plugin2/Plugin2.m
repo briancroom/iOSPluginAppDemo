@@ -4,7 +4,9 @@
 @implementation Plugin2
 
 - (UIViewController *)rootViewController {
-    return [Plugin2ViewController new];
+    // This plugin demonstrates loading its root view controller from a storyboard
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Plugin2" bundle:[NSBundle bundleForClass:self.class]];
+    return [storyboard instantiateInitialViewController];
 }
 
 @end

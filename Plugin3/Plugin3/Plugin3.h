@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
 #import "AppPlugin.h"
 
-@interface Plugin2: NSObject <AppPlugin>
+@interface Plugin3 : NSObject <AppPlugin>
 @end
