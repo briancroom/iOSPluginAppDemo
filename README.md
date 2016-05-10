@@ -1,0 +1,5 @@
+# iOSPluginAppDemo
+
+This is an example of how a plugin architecture could be adopted by an iOS app to allow for high modularity and loose coupling. Note that due to App Store rules, all plugins must be bundled within the host app for release.
+
+The workspace contains a host app, and multiple plugin bundles, each of which is contained in an independent Xcode project. There is a shared `AppPlugin` protocol which allows plugins to vend a view controller to be displayed in host app. Note that the plugins have no build-time dependency on the host app, and the host app depends on the plugins only via a Copy Plugins build phase. No symbols are referenced during linking. The host app discovers and loads plugins by looking for bundles within its plugins directory and using `NSBundle` to load their code on-demand.
