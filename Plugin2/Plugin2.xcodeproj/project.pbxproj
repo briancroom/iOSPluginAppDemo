@@ -24,7 +24,6 @@
 		AEC354441CE1C679000E643C /* AppPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPlugin.h; sourceTree = "<group>"; };
 		AEC3544A1CE20CEB000E643C /* Plugin2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Plugin2.storyboard; sourceTree = "<group>"; };
 		AEC354611CE24B20000E643C /* Plugin2.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Plugin2.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEC354631CE24B20000E643C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +42,6 @@
 			children = (
 				AEC3541F1CE1B925000E643C /* Plugin2 */,
 				AEC354401CE1C55A000E643C /* CommonPluginHeaders */,
-				AEC354621CE24B20000E643C /* Plugin2 */,
 				AEC3541E1CE1B925000E643C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,14 +75,6 @@
 			);
 			name = CommonPluginHeaders;
 			path = ../CommonPluginHeaders;
-			sourceTree = "<group>";
-		};
-		AEC354621CE24B20000E643C /* Plugin2 */ = {
-			isa = PBXGroup;
-			children = (
-				AEC354631CE24B20000E643C /* Info.plist */,
-			);
-			path = Plugin2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +175,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -201,7 +192,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -233,6 +224,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -243,7 +235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,6 +288,7 @@
 				AEC354661CE24B20000E643C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

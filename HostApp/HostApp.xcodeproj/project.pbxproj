@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEC323101CE2C6D0002077F5 /* LaunchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC3230F1CE2C6D0002077F5 /* LaunchStoryboard.storyboard */; };
 		AEC353E01CE1B5A6000E643C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC353DF1CE1B5A6000E643C /* main.m */; };
 		AEC353E31CE1B5A6000E643C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC353E21CE1B5A6000E643C /* AppDelegate.m */; };
 		AEC354391CE1BB9A000E643C /* PluginLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC354381CE1BB9A000E643C /* PluginLoader.m */; };
-		AEC354491CE1CA67000E643C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEC354481CE1CA67000E643C /* Default-568h@2x.png */; };
 		AEC3546D1CE24BFD000E643C /* Plugin1.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEC3546C1CE24BFD000E643C /* Plugin1.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEC354771CE25192000E643C /* Plugin2.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEC354751CE24E45000E643C /* Plugin2.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEC354901CE295E3000E643C /* Plugin3.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEC3548F1CE295E3000E643C /* Plugin3.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -32,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AEC3230F1CE2C6D0002077F5 /* LaunchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchStoryboard.storyboard; sourceTree = "<group>"; };
 		AEC353DB1CE1B5A6000E643C /* HostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC353DF1CE1B5A6000E643C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AEC353E11CE1B5A6000E643C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,10 +41,9 @@
 		AEC354371CE1BB9A000E643C /* PluginLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginLoader.h; sourceTree = "<group>"; };
 		AEC354381CE1BB9A000E643C /* PluginLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginLoader.m; sourceTree = "<group>"; };
 		AEC354411CE1C644000E643C /* AppPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppPlugin.h; sourceTree = "<group>"; };
-		AEC354481CE1CA67000E643C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		AEC3546C1CE24BFD000E643C /* Plugin1.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = Plugin1.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC354751CE24E45000E643C /* Plugin2.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = Plugin2.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEC3548F1CE295E3000E643C /* Plugin3.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; name = Plugin3.bundle; path = "Plugin3.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC3548F1CE295E3000E643C /* Plugin3.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = Plugin3.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,6 @@
 				AEC353E21CE1B5A6000E643C /* AppDelegate.m */,
 				AEC354371CE1BB9A000E643C /* PluginLoader.h */,
 				AEC354381CE1BB9A000E643C /* PluginLoader.m */,
-				AEC353F21CE1B5A6000E643C /* Info.plist */,
 				AEC353DE1CE1B5A6000E643C /* Supporting Files */,
 			);
 			path = HostApp;
@@ -91,8 +90,9 @@
 		AEC353DE1CE1B5A6000E643C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AEC354481CE1CA67000E643C /* Default-568h@2x.png */,
+				AEC3230F1CE2C6D0002077F5 /* LaunchStoryboard.storyboard */,
 				AEC353DF1CE1B5A6000E643C /* main.m */,
+				AEC353F21CE1B5A6000E643C /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -147,6 +147,7 @@
 				TargetAttributes = {
 					AEC353DA1CE1B5A6000E643C = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = DPYK5ATBFU;
 					};
 				};
 			};
@@ -173,7 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEC354491CE1CA67000E643C /* Default-568h@2x.png in Resources */,
+				AEC323101CE2C6D0002077F5 /* LaunchStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +215,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -230,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -259,6 +261,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -269,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -280,22 +283,26 @@
 		AEC353F61CE1B5A6000E643C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HostApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.briancroom.HostApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		AEC353F71CE1B5A6000E643C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HostApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.briancroom.HostApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
