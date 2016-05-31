@@ -1,5 +1,5 @@
 #import "Plugin1.h"
-#import "Plugin1ViewController.h"
+@import Plugin1Framework;
 
 @implementation Plugin1
 
