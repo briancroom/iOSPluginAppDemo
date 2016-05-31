@@ -10,8 +10,7 @@
                                  options:NSDirectoryEnumerationSkipsSubdirectoryDescendants|NSDirectoryEnumerationSkipsPackageDescendants
                                                      errorHandler:NULL]) {
         NSBundle *bundle = [NSBundle bundleWithURL:pluginURL];
-        NSNumber *enabled = bundle.infoDictionary[@"PluginEnabled"];
-        if (enabled != nil && ![enabled boolValue]) {
+        if (![self isPluginEnabled:bundle]) {
             continue;
         }
 
@@ -23,6 +22,21 @@
     }
 
     return classes;
+}
+
++ (BOOL)isPluginEnabled:(NSBundle *)plugin {
+    NSNumber *enabled = plugin.infoDictionary[@"PluginEnabled"];
+    if (enabled != nil && ![enabled boolValue]) {
+        return NO;
+    }
+
+    NSString *pluginName = plugin.bundleURL.URLByDeletingPathExtension.lastPathComponent;
+    NSArray *selectedPlugins = [[NSProcessInfo processInfo].environment[@"SELECTED_PLUGINS"] componentsSeparatedByString:@","];
+    if (selectedPlugins.count > 0 && ![selectedPlugins containsObject:pluginName]) {
+        return NO;
+    }
+
+    return YES;
 }
 
 @end
