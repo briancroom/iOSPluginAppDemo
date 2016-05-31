@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE1910401CFDC9EE00AD3C12 /* HostAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE19103F1CFDC9EE00AD3C12 /* HostAppUITests.m */; };
 		AEC323101CE2C6D0002077F5 /* LaunchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC3230F1CE2C6D0002077F5 /* LaunchStoryboard.storyboard */; };
 		AEC353E01CE1B5A6000E643C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC353DF1CE1B5A6000E643C /* main.m */; };
 		AEC353E31CE1B5A6000E643C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC353E21CE1B5A6000E643C /* AppDelegate.m */; };
@@ -15,6 +16,16 @@
 		AEC354771CE25192000E643C /* Plugin2.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEC354751CE24E45000E643C /* Plugin2.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEC354901CE295E3000E643C /* Plugin3.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEC3548F1CE295E3000E643C /* Plugin3.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE1910421CFDC9EE00AD3C12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEC353D31CE1B5A6000E643C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEC353DA1CE1B5A6000E643C;
+			remoteInfo = HostApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		AEC354341CE1BA14000E643C /* CopyFiles */ = {
@@ -32,6 +43,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AE19103D1CFDC9EE00AD3C12 /* HostAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HostAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE19103F1CFDC9EE00AD3C12 /* HostAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HostAppUITests.m; sourceTree = "<group>"; };
+		AE1910411CFDC9EE00AD3C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEC3230F1CE2C6D0002077F5 /* LaunchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchStoryboard.storyboard; sourceTree = "<group>"; };
 		AEC353DB1CE1B5A6000E643C /* HostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC353DF1CE1B5A6000E643C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +61,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AE19103A1CFDC9EE00AD3C12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AEC353D81CE1B5A6000E643C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,12 +78,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE19103E1CFDC9EE00AD3C12 /* HostAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE19103F1CFDC9EE00AD3C12 /* HostAppUITests.m */,
+				AE1910411CFDC9EE00AD3C12 /* Info.plist */,
+			);
+			path = HostAppUITests;
+			sourceTree = "<group>";
+		};
 		AEC353D21CE1B5A6000E643C = {
 			isa = PBXGroup;
 			children = (
 				AEC353DD1CE1B5A6000E643C /* HostApp */,
 				AEC3543E1CE1C51F000E643C /* CommonPluginHeaders */,
 				AEC354721CE24C72000E643C /* PlugIns */,
+				AE19103E1CFDC9EE00AD3C12 /* HostAppUITests */,
 				AEC353DC1CE1B5A6000E643C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				AEC353DB1CE1B5A6000E643C /* HostApp.app */,
+				AE19103D1CFDC9EE00AD3C12 /* HostAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +151,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AE19103C1CFDC9EE00AD3C12 /* HostAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE1910461CFDC9EE00AD3C12 /* Build configuration list for PBXNativeTarget "HostAppUITests" */;
+			buildPhases = (
+				AE1910391CFDC9EE00AD3C12 /* Sources */,
+				AE19103A1CFDC9EE00AD3C12 /* Frameworks */,
+				AE19103B1CFDC9EE00AD3C12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE1910431CFDC9EE00AD3C12 /* PBXTargetDependency */,
+			);
+			name = HostAppUITests;
+			productName = HostAppUITests;
+			productReference = AE19103D1CFDC9EE00AD3C12 /* HostAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		AEC353DA1CE1B5A6000E643C /* HostApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEC353F51CE1B5A6000E643C /* Build configuration list for PBXNativeTarget "HostApp" */;
@@ -145,6 +195,10 @@
 			attributes = {
 				LastUpgradeCheck = 0730;
 				TargetAttributes = {
+					AE19103C1CFDC9EE00AD3C12 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = AEC353DA1CE1B5A6000E643C;
+					};
 					AEC353DA1CE1B5A6000E643C = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = DPYK5ATBFU;
@@ -165,11 +219,19 @@
 			projectRoot = "";
 			targets = (
 				AEC353DA1CE1B5A6000E643C /* HostApp */,
+				AE19103C1CFDC9EE00AD3C12 /* HostAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AE19103B1CFDC9EE00AD3C12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AEC353D91CE1B5A6000E643C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +243,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AE1910391CFDC9EE00AD3C12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1910401CFDC9EE00AD3C12 /* HostAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AEC353D71CE1B5A6000E643C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,7 +263,37 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AE1910431CFDC9EE00AD3C12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEC353DA1CE1B5A6000E643C /* HostApp */;
+			targetProxy = AE1910421CFDC9EE00AD3C12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		AE1910441CFDC9EE00AD3C12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HostAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.briancroom.HostAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HostApp;
+			};
+			name = Debug;
+		};
+		AE1910451CFDC9EE00AD3C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HostAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.briancroom.HostAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HostApp;
+			};
+			name = Release;
+		};
 		AEC353F31CE1B5A6000E643C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -309,6 +409,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AE1910461CFDC9EE00AD3C12 /* Build configuration list for PBXNativeTarget "HostAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE1910441CFDC9EE00AD3C12 /* Debug */,
+				AE1910451CFDC9EE00AD3C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		AEC353D61CE1B5A6000E643C /* Build configuration list for PBXProject "HostApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
