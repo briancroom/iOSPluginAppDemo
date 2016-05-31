@@ -7,14 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE1910241CFDC66500AD3C12 /* Plugin2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC3542B1CE1B952000E643C /* Plugin2ViewController.m */; };
+		AE1910271CFDC68C00AD3C12 /* libPlugin2Library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE19101A1CFDC53800AD3C12 /* libPlugin2Library.a */; };
+		AE19102F1CFDC70A00AD3C12 /* Plugin2ViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE19102E1CFDC70A00AD3C12 /* Plugin2ViewControllerTests.m */; };
+		AE1910311CFDC70A00AD3C12 /* libPlugin2Library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE19101A1CFDC53800AD3C12 /* libPlugin2Library.a */; };
+		AE1910371CFDC7A500AD3C12 /* Plugin2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC3544A1CE20CEB000E643C /* Plugin2.storyboard */; };
+		AE1910381CFDC7A500AD3C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC3543C1CE1C33D000E643C /* Assets.xcassets */; };
 		AEC354671CE24B73000E643C /* Plugin2.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC354281CE1B943000E643C /* Plugin2.m */; };
-		AEC354681CE24B76000E643C /* Plugin2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC3542B1CE1B952000E643C /* Plugin2ViewController.m */; };
 		AEC354691CE24B78000E643C /* Plugin2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC3544A1CE20CEB000E643C /* Plugin2.storyboard */; };
 		AEC3546A1CE24B78000E643C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC3543C1CE1C33D000E643C /* Assets.xcassets */; };
-		AEC3546B1CE24B7B000E643C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEC354221CE1B925000E643C /* Info.plist */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AE1910251CFDC68700AD3C12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEC354141CE1B925000E643C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE1910191CFDC53800AD3C12;
+			remoteInfo = Plugin2Library;
+		};
+		AE1910321CFDC70A00AD3C12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEC354141CE1B925000E643C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE1910191CFDC53800AD3C12;
+			remoteInfo = Plugin2Library;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE1910181CFDC53800AD3C12 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		AE19101A1CFDC53800AD3C12 /* libPlugin2Library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPlugin2Library.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE19102C1CFDC70A00AD3C12 /* Plugin2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Plugin2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE19102E1CFDC70A00AD3C12 /* Plugin2ViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Plugin2ViewControllerTests.m; sourceTree = "<group>"; };
+		AE1910301CFDC70A00AD3C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEC354201CE1B925000E643C /* Plugin2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plugin2.h; sourceTree = "<group>"; };
 		AEC354221CE1B925000E643C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEC354281CE1B943000E643C /* Plugin2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plugin2.m; sourceTree = "<group>"; };
@@ -27,21 +64,67 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AEC3545E1CE24B20000E643C /* Frameworks */ = {
+		AE1910171CFDC53800AD3C12 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE1910291CFDC70A00AD3C12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1910311CFDC70A00AD3C12 /* libPlugin2Library.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC3545E1CE24B20000E643C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1910271CFDC68C00AD3C12 /* libPlugin2Library.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE19101B1CFDC53900AD3C12 /* Plugin2Library */ = {
+			isa = PBXGroup;
+			children = (
+				AEC3542A1CE1B952000E643C /* Plugin2ViewController.h */,
+				AEC3542B1CE1B952000E643C /* Plugin2ViewController.m */,
+			);
+			path = Plugin2Library;
+			sourceTree = "<group>";
+		};
+		AE1910231CFDC61E00AD3C12 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AEC3544A1CE20CEB000E643C /* Plugin2.storyboard */,
+				AEC3543C1CE1C33D000E643C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE19102D1CFDC70A00AD3C12 /* Plugin2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AE19102E1CFDC70A00AD3C12 /* Plugin2ViewControllerTests.m */,
+				AE1910301CFDC70A00AD3C12 /* Info.plist */,
+			);
+			path = Plugin2Tests;
+			sourceTree = "<group>";
+		};
 		AEC354131CE1B925000E643C = {
 			isa = PBXGroup;
 			children = (
 				AEC3541F1CE1B925000E643C /* Plugin2 */,
+				AE19101B1CFDC53900AD3C12 /* Plugin2Library */,
+				AE1910231CFDC61E00AD3C12 /* Resources */,
 				AEC354401CE1C55A000E643C /* CommonPluginHeaders */,
+				AE19102D1CFDC70A00AD3C12 /* Plugin2Tests */,
 				AEC3541E1CE1B925000E643C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				AEC354611CE24B20000E643C /* Plugin2.bundle */,
+				AE19101A1CFDC53800AD3C12 /* libPlugin2Library.a */,
+				AE19102C1CFDC70A00AD3C12 /* Plugin2Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,10 +144,6 @@
 			children = (
 				AEC354201CE1B925000E643C /* Plugin2.h */,
 				AEC354281CE1B943000E643C /* Plugin2.m */,
-				AEC3542A1CE1B952000E643C /* Plugin2ViewController.h */,
-				AEC3542B1CE1B952000E643C /* Plugin2ViewController.m */,
-				AEC3544A1CE20CEB000E643C /* Plugin2.storyboard */,
-				AEC3543C1CE1C33D000E643C /* Assets.xcassets */,
 				AEC354221CE1B925000E643C /* Info.plist */,
 			);
 			path = Plugin2;
@@ -80,6 +161,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AE1910191CFDC53800AD3C12 /* Plugin2Library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE1910221CFDC53900AD3C12 /* Build configuration list for PBXNativeTarget "Plugin2Library" */;
+			buildPhases = (
+				AE1910161CFDC53800AD3C12 /* Sources */,
+				AE1910171CFDC53800AD3C12 /* Frameworks */,
+				AE1910181CFDC53800AD3C12 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Plugin2Library;
+			productName = Plugin2Library;
+			productReference = AE19101A1CFDC53800AD3C12 /* libPlugin2Library.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AE19102B1CFDC70A00AD3C12 /* Plugin2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE1910341CFDC70A00AD3C12 /* Build configuration list for PBXNativeTarget "Plugin2Tests" */;
+			buildPhases = (
+				AE1910281CFDC70A00AD3C12 /* Sources */,
+				AE1910291CFDC70A00AD3C12 /* Frameworks */,
+				AE19102A1CFDC70A00AD3C12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE1910331CFDC70A00AD3C12 /* PBXTargetDependency */,
+			);
+			name = Plugin2Tests;
+			productName = Plugin2Tests;
+			productReference = AE19102C1CFDC70A00AD3C12 /* Plugin2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		AEC354601CE24B20000E643C /* Plugin2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEC354641CE24B20000E643C /* Build configuration list for PBXNativeTarget "Plugin2" */;
@@ -91,6 +207,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				AE1910261CFDC68700AD3C12 /* PBXTargetDependency */,
 			);
 			name = Plugin2;
 			productName = Plugin2;
@@ -105,6 +222,12 @@
 			attributes = {
 				LastUpgradeCheck = 0730;
 				TargetAttributes = {
+					AE1910191CFDC53800AD3C12 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					AE19102B1CFDC70A00AD3C12 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					AEC354601CE24B20000E643C = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -123,36 +246,112 @@
 			projectRoot = "";
 			targets = (
 				AEC354601CE24B20000E643C /* Plugin2 */,
+				AE1910191CFDC53800AD3C12 /* Plugin2Library */,
+				AE19102B1CFDC70A00AD3C12 /* Plugin2Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AE19102A1CFDC70A00AD3C12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1910381CFDC7A500AD3C12 /* Assets.xcassets in Resources */,
+				AE1910371CFDC7A500AD3C12 /* Plugin2.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AEC3545F1CE24B20000E643C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AEC3546A1CE24B78000E643C /* Assets.xcassets in Resources */,
 				AEC354691CE24B78000E643C /* Plugin2.storyboard in Resources */,
-				AEC3546B1CE24B7B000E643C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AE1910161CFDC53800AD3C12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1910241CFDC66500AD3C12 /* Plugin2ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE1910281CFDC70A00AD3C12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE19102F1CFDC70A00AD3C12 /* Plugin2ViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AEC3545D1CE24B20000E643C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEC354681CE24B76000E643C /* Plugin2ViewController.m in Sources */,
 				AEC354671CE24B73000E643C /* Plugin2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AE1910261CFDC68700AD3C12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE1910191CFDC53800AD3C12 /* Plugin2Library */;
+			targetProxy = AE1910251CFDC68700AD3C12 /* PBXContainerItemProxy */;
+		};
+		AE1910331CFDC70A00AD3C12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE1910191CFDC53800AD3C12 /* Plugin2Library */;
+			targetProxy = AE1910321CFDC70A00AD3C12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		AE1910201CFDC53900AD3C12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AE1910211CFDC53900AD3C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AE1910351CFDC70A00AD3C12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Plugin2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.briancroom.Plugin2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE1910361CFDC70A00AD3C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Plugin2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.briancroom.Plugin2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		AEC354231CE1B925000E643C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -250,6 +449,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Plugin2/Info.plist;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.briancroom.Plugin2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -262,6 +462,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Plugin2/Info.plist;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.briancroom.Plugin2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -272,6 +473,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AE1910221CFDC53900AD3C12 /* Build configuration list for PBXNativeTarget "Plugin2Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE1910201CFDC53900AD3C12 /* Debug */,
+				AE1910211CFDC53900AD3C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AE1910341CFDC70A00AD3C12 /* Build configuration list for PBXNativeTarget "Plugin2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE1910351CFDC70A00AD3C12 /* Debug */,
+				AE1910361CFDC70A00AD3C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		AEC354171CE1B925000E643C /* Build configuration list for PBXProject "Plugin2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
